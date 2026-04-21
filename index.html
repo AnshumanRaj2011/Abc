@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Poster Display</title>
   <style>
     body {
       margin: 0;
@@ -14,12 +13,14 @@
 
     img {
       width: 70cm;
-      height: 55cm;
+      height: auto;   /* ✅ FIX */
+      max-height: 100vh;  /* prevents cutting */
       object-fit: contain;
+      border: 2px solid red; /* optional for measuring */
     }
   </style>
 </head>
 <body>
-  <img src="1776781682003.png" alt="Poster">
+  <img src="1776781682003.png">
 </body>
 </html>
