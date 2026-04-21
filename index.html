@@ -12,15 +12,15 @@
     }
 
     img {
-      width: auto;
-      height: 50cm;   /* ✅ FIX */
-      max-height: 100vh;  /* prevents cutting */
-      object-fit: contain;
-      border: 2px solid red; /* optional for measuring */
+      width: 70cm;      /* control size here */
+      height: auto;     /* keep ratio correct */
+      max-width: 100vw; /* prevent overflow */
+      max-height: 100vh;
+      border: 2px solid red; /* helps measuring */
     }
   </style>
 </head>
 <body>
-  <img src="1776781682003.png">
+  <img src="your-image.jpg">
 </body>
 </html>
