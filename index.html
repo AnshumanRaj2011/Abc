@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,13 +10,14 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      overflow: hidden; /* prevents scrollbars */
     }
 
     img {
-      width: 70cm;   /* ONLY this */
-      height: auto;  /* keeps ratio */
-      border: 2px solid red; /* for measuring */
+      width: 70cm;
+      height: auto;   /* ✅ FIX */
+      max-height: 100vh;  /* prevents cutting */
+      object-fit: contain;
+      border: 2px solid red; /* optional for measuring */
     }
   </style>
 </head>
